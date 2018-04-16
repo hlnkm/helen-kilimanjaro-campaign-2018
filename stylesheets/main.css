@@ -34,31 +34,41 @@ html, body {
     background-color: rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 100%; }
-  .landing .sub-explainer {
-    font-size: 42px;
-    font-weight: 500;
-    text-shadow: 3px 2px black;
-    padding: 0px 10px 40px 10px; }
+  .landing .landing-subsubtitle {
+    font-size: 32px;
+    text-shadow: 4px 3px black;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%; }
   .landing .landing-title {
     font-weight: 700;
-    font-size: 140px;
-    text-shadow: 9px 7px black;
-    padding: none;
+    padding: 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-basis; }
-  .landing .title-large {
-    font-weight: 700;
-    font-size: 240px;
-    line-height: 50%; }
-  .landing .title-animated {
-    font-weight: 700;
-    font-size: 140px; }
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap; }
+    .landing .landing-title .title-large {
+      font-weight: 700;
+      font-size: 240px;
+      text-shadow: 9px 7px black;
+      padding: 0px 10px 0px 0px;
+      margin-top: -50px; }
+    .landing .landing-title .title-animated {
+      font-weight: 700;
+      font-size: 140px;
+      text-shadow: 9px 7px black;
+      min-width: 460px;
+      height: 180px; }
   .landing .landing-subtitle {
+    font-weight: 700;
     font-size: 140px;
     text-shadow: 9px 7px black;
-    font-weight: 700;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -88,37 +98,9 @@ html, body {
         transform: rotate(20deg); }
         .landing .landing-subtitle .landing-subtitle-badge span a {
           color: white;
-          text-decoration: none;
-          /* no underline */ }
+          text-decoration: none; }
     .landing .landing-subtitle .landing-subtitle-badge:hover {
       background-color: #eb6e80; }
-  @media screen and (max-width: 700px) {
-    .landing .sub-explainer {
-      font-size: 24px;
-      font-weight: 500;
-      text-shadow: 3px 2px black;
-      padding: 0px 10px 40px 10px; }
-    .landing .landing-title div {
-      font-weight: 700;
-      font-size: 42px;
-      text-shadow: 9px 7px black;
-      padding: none;
-      width: 100%;
-      display: flex;
-      flex-direction: column; }
-    .landing .title-large {
-      font-weight: 700;
-      font-size: 100px;
-      line-height: 50%; }
-    .landing .title-animated {
-      font-weight: 700;
-      font-size: 42px; }
-    .landing .landing-subtitle {
-      font-size: 42px;
-      font-weight: 700; }
-      .landing .landing-subtitle .landing-subtitle-main {
-        line-height: 100%;
-        padding-right: 0px; } }
   .landing .buttons {
     display: flex;
     flex-direction: row;
@@ -132,6 +114,148 @@ html, body {
       box-shadow: 4px 4px black;
       padding: 10px;
       margin-right: 10px; }
+      .landing .buttons .btn a {
+        color: white;
+        text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .landing .landing-subsubtitle {
+      font-size: 24px;
+      text-shadow: 3px 2px black;
+      text-align: center;
+      justify-content: center; }
+    .landing .landing-title {
+      flex-direction: column;
+      align-items: center; }
+      .landing .landing-title .title-large {
+        font-size: 100px;
+        margin-top: -25px;
+        text-shadow: 6px 5px black; }
+      .landing .landing-title .title-animated {
+        font-size: 48px;
+        min-width: 90%;
+        height: 1em;
+        text-shadow: 4px 3px black;
+        text-align: center; }
+    .landing .landing-subtitle {
+      font-size: 48px;
+      text-shadow: 4px 3px black;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .landing .landing-subtitle .landing-subtitle-main {
+        padding-right: 0px; }
+      .landing .landing-subtitle .landing-subtitle-badge {
+        margin-top: 10px;
+        border-radius: 0%;
+        width: 100%;
+        min-height: 40px;
+        font-size: 24px;
+        font-weight: 500;
+        text-shadow: 3px 2px black;
+        box-shadow: 6px 5px black;
+        border: 4px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .landing .landing-subtitle .landing-subtitle-badge span {
+          width: 100%;
+          transform: rotate(0deg); }
+          .landing .landing-subtitle .landing-subtitle-badge span a {
+            color: white;
+            text-decoration: none; }
+    .landing .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 10px;
+      text-shadow: 2px 1px black; }
+      .landing .buttons .btn {
+        min-width: 100%;
+        height: 40px;
+        font-size: 24px;
+        font-weight: 500;
+        text-shadow: 3px 2px black;
+        box-shadow: 6px 5px black;
+        padding: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .landing .buttons .btn a {
+          color: white;
+          text-decoration: none; } }
+  @media screen and (min-width: 768px) and (max-width: 1380px) {
+    .landing .landing-title .title-large {
+      font-weight: 700;
+      font-size: 140px;
+      text-shadow: 9px 7px black;
+      padding: 0px 10px 0px 0px;
+      margin-top: -30px; }
+    .landing .landing-title .title-animated {
+      font-weight: 700;
+      font-size: 80px;
+      text-shadow: 9px 7px black;
+      min-width: 300px;
+      height: 0px; }
+    .landing .landing-subtitle {
+      font-weight: 700;
+      font-size: 80px;
+      text-shadow: 9px 7px black;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+      width: 100%;
+      height: 100%; }
+      .landing .landing-subtitle .landing-subtitle-main {
+        line-height: 90%;
+        padding-right: 20px; }
+      .landing .landing-subtitle .landing-subtitle-badge {
+        border-radius: 50%;
+        background-color: #008f95;
+        min-width: 180px;
+        min-height: 180px;
+        font-size: 32px;
+        font-weight: 500;
+        text-shadow: 3px 2px black;
+        box-shadow: 6px 5px black;
+        border: 4px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .landing .landing-subtitle .landing-subtitle-badge span {
+          width: 180px;
+          transform: rotate(20deg); }
+          .landing .landing-subtitle .landing-subtitle-badge span a {
+            color: white;
+            text-decoration: none; }
+      .landing .landing-subtitle .landing-subtitle-badge:hover {
+        background-color: #eb6e80; }
+    .landing .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 32px;
+      font-weight: 500;
+      margin-top: 10px;
+      text-shadow: 4px 2px black; }
+      .landing .buttons .btn {
+        border: 4px solid white;
+        box-shadow: 4px 4px black;
+        padding: 10px;
+        margin-right: 10px; }
+        .landing .buttons .btn a {
+          color: white;
+          text-decoration: none; } }
 
 .main {
   width: 100%;
@@ -147,8 +271,14 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px 0px 20px 0px; }
+    .main section .header {
+      width: 30%; }
+    .main section .section-content {
+      display: flex;
+      flex-direction: column;
+      width: 70%; }
     .main section h1 {
       padding: 0px 0px 10px 0px;
       margin: 0px;
@@ -156,15 +286,52 @@ html, body {
     .main section p {
       font-size: 24px; }
     .main section .info {
-      width: 40%;
-      padding: 0px 20px 0px 0px; }
+      width: 100%;
+      padding: 0px 20px 0px 10px; }
     .main section .visuals {
-      width: 60%; }
-
-.placeholder {
-  width: 100%;
-  height: 580px;
-  background-color: grey; }
+      width: 100%;
+      order: -1; }
+      .main section .visuals .placeholder {
+        width: 100%;
+        height: 580px;
+        background-color: grey; }
+  @media screen and (max-width: 768px) {
+    .main section {
+      flex-direction: column; }
+      .main section .header {
+        width: 100%; }
+      .main section .section-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+      .main section .info {
+        width: 100%;
+        padding: 0px 20px 0px 0px; }
+      .main section .visuals {
+        width: 100%;
+        order: -1; }
+        .main section .visuals .placeholder {
+          height: 340px; }
+      .main section .header {
+        width: 100%;
+        order: -2; } }
+  @media screen and (min-width: 768px) and (max-width: 1380px) {
+    .main section {
+      flex-direction: row; }
+      .main section .section-content {
+        display: flex;
+        flex-direction: column;
+        width: 70%; }
+      .main section .info {
+        width: 100%;
+        padding: 0px 20px 0px 0px; }
+      .main section .visuals {
+        width: 100%;
+        order: -1; }
+        .main section .visuals .placeholder {
+          height: 340px; }
+      .main section .header {
+        width: 30%; } }
 
 footer {
   display: flex;
@@ -184,6 +351,13 @@ footer {
     width: 100%;
     height: 100%; }
 
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    height: 100%; }
+    footer .footer-info {
+      flex-direction: column;
+      font-size: 10px; } }
 .highlight {
   background-color: #eb6e80;
   padding: 2px; }

@@ -8,7 +8,7 @@ $(document).ready(function(){
 	*/
 	var typeWord = function() {
 			// clear the text
-			$animatedTitle.html("")
+			$animatedTitle.html(" ")
 			const text = ['FEET', 'DOLLARS']
 
 			if($animatedTitleSwitch >= text.length - 1){
