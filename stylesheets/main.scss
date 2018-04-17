@@ -753,4 +753,39 @@ i {
 	color:white;
 }
 
+.bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 1;
+    color:$blush;
+    font-size: $fontsize-xs;
+    	font-weight: $bold;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 120px 120px;
+    border-color: transparent transparent white transparent;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+
+    div{
+    	margin-top: 160px;
+    	margin-right:10px;
+    	transform: rotate(-45deg);
+    	text-shadow: 1px 1px black;
+    	a {
+					  color:$blush;
+					  text-decoration: none; 
+					}
+    }
+}
+
+
+
+
 
