@@ -86,7 +86,7 @@ html, body {
       padding-right: 40px; }
     .landing .landing-subtitle .landing-subtitle-badge {
       border-radius: 50%;
-      background-color: #008f95;
+      background-color: #eb6e80;
       min-width: 250px;
       min-height: 250px;
       font-size: 48px;
@@ -107,7 +107,7 @@ html, body {
           color: white;
           text-decoration: none; }
     .landing .landing-subtitle .landing-subtitle-badge:hover {
-      background-color: #eb6e80; }
+      background-color: #e24e42; }
   .landing .buttons {
     position: absolute;
     left: 0px;
@@ -119,7 +119,7 @@ html, body {
     align-items: center;
     font-size: 24px;
     font-weight: 500;
-    text-shadow: 4px 2px black;
+    text-shadow: 2px 1px black;
     text-align: center; }
     .landing .buttons .btn a {
       color: white;
@@ -221,7 +221,6 @@ html, body {
         padding-right: 20px; }
       .landing .landing-subtitle .landing-subtitle-badge {
         border-radius: 50%;
-        background-color: #008f95;
         min-width: 180px;
         min-height: 180px;
         font-size: 32px;
@@ -283,7 +282,6 @@ html, body {
         padding-right: 20px; }
       .landing .landing-subtitle .landing-subtitle-badge {
         border-radius: 50%;
-        background-color: #008f95;
         min-width: 240px;
         min-height: 240px;
         font-size: 32px;
@@ -323,77 +321,84 @@ html, body {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: space-between;
-  color: black;
+  align-items: center;
+  color: #F8EEE7;
   background-color: white; }
   .main section {
     background-color: white;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 10px 0px 20px 0px; }
-    .main section .header {
-      width: 30%; }
-    .main section .section-content {
+    flex-direction: column;
+    align-items: center;
+    color: #F8EEE7; }
+    .main section .section-container {
+      width: 90%;
       display: flex;
-      flex-direction: column;
-      width: 70%; }
-    .main section h1 {
-      padding: 0px 0px 10px 0px;
-      margin: 0px;
-      font-size: 42px; }
-    .main section p {
-      font-size: 24px; }
-    .main section .info {
-      width: 100%;
-      padding: 0px 20px 0px 10px; }
-    .main section .visuals {
-      width: 100%;
-      order: -1; }
-      .main section .visuals .placeholder {
-        width: 100%;
-        height: 580px;
-        background-color: grey; }
-  @media screen and (max-width: 768px) {
-    .main section {
-      flex-direction: column; }
-      .main section .header {
-        width: 100%; }
-      .main section .section-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%; }
-      .main section .info {
-        width: 100%;
-        padding: 0px 20px 0px 0px; }
-      .main section .visuals {
-        width: 100%;
-        order: -1; }
-        .main section .visuals .placeholder {
-          height: 340px; }
-      .main section .header {
-        width: 100%;
-        order: -2; } }
-  @media screen and (min-width: 768px) and (max-width: 1380px) {
-    .main section {
-      flex-direction: row; }
-      .main section .section-content {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 10px 0px 20px 0px; }
+      .main section .section-container .header {
+        width: 30%; }
+      .main section .section-container .section-content {
         display: flex;
         flex-direction: column;
         width: 70%; }
-      .main section .info {
+      .main section .section-container h1 {
+        padding: 0px 0px 10px 0px;
+        margin: 0px;
+        font-size: 42px;
+        text-shadow: 3px 2px black; }
+      .main section .section-container p {
+        font-size: 24px; }
+      .main section .section-container .info {
         width: 100%;
-        padding: 0px 20px 0px 0px; }
-      .main section .visuals {
+        padding: 0px 20px 0px 10px; }
+      .main section .section-container .visuals {
         width: 100%;
         order: -1; }
-        .main section .visuals .placeholder {
+        .main section .section-container .visuals .placeholder {
+          width: 100%;
+          height: 580px;
+          background-color: grey; }
+  @media screen and (max-width: 768px) {
+    .main section .section-container {
+      flex-direction: column; }
+      .main section .section-container .header {
+        width: 100%; }
+      .main section .section-container .section-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+      .main section .section-container .info {
+        width: 100%;
+        padding: 0px 20px 0px 0px; }
+      .main section .section-container .visuals {
+        width: 100%;
+        order: -1; }
+        .main section .section-container .visuals .placeholder {
           height: 340px; }
-      .main section .header {
-        width: 30%; } }
+      .main section .section-container .header {
+        width: 100%;
+        order: -2; } }
+  @media screen and (min-width: 768px) and (max-width: 1380px) {
+    .main section .section-container {
+      flex-direction: column; }
+      .main section .section-container .section-content {
+        display: flex;
+        flex-direction: column;
+        width: 90%; }
+      .main section .section-container .info {
+        width: 100%;
+        padding: 0px 20px 0px 0px; }
+      .main section .section-container .visuals {
+        width: 100%;
+        order: -1; }
+        .main section .section-container .visuals .placeholder {
+          height: 340px; }
+      .main section .section-container .header {
+        width: 100%; } }
 
 footer {
   display: flex;
@@ -403,12 +408,12 @@ footer {
   width: 100%;
   height: 60px;
   background-color: black;
-  color: #008f95;
+  color: #94618e;
   bottom: 0; }
   footer .footer-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%; }
@@ -449,5 +454,21 @@ i {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
+
+#campaign {
+  background-color: #eb6e80;
+  color: white; }
+
+#journey {
+  background-color: #94618e;
+  color: white; }
+
+#updates {
+  background-color: #e24e42;
+  color: white; }
+
+#foundation {
+  background-color: #e9b000;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

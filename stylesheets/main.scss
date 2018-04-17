@@ -1,8 +1,12 @@
 // colors:
 $aqua: #008f95;
 $blush: #eb6e80;
+$mustard:#e9b000;
+$papaya:#e24e42;
 $black: black;
 $white: #FFFFFF;
+$grape:#94618e;
+$shell: #F8EEE7;
 
 // fonts
 $font-main: 'Barlow Condensed', sans-serif;
@@ -141,7 +145,7 @@ html, body{
 
 		.landing-subtitle-badge{
 			border-radius: 50%;
-			background-color: $aqua;
+			background-color: $blush;
 			min-width:250px;
 			min-height:250px;
 			font-size: $fontsize-md;
@@ -169,7 +173,7 @@ html, body{
 		}
 
 		.landing-subtitle-badge:hover{
-				background-color: $blush;
+				background-color: $papaya;
 		}
 
 	}
@@ -186,7 +190,7 @@ html, body{
 		font-size: $fontsize-xs;
 		font-weight: 500;	
 		// margin-top:10px;
-		text-shadow: 4px 2px black;
+		text-shadow: 2px 1px black;
 		text-align: center;
 
 		.btn{
@@ -343,7 +347,6 @@ html, body{
 
 			.landing-subtitle-badge{
 				border-radius: 50%;
-				background-color: $aqua;
 				min-width:180px;
 				min-height:180px;
 				font-size: $fontsize-sm;
@@ -439,7 +442,6 @@ html, body{
 
 			.landing-subtitle-badge{
 				border-radius: 50%;
-				background-color: $aqua;
 				min-width:240px;
 				min-height:240px;
 				font-size: $fontsize-sm;
@@ -518,102 +520,117 @@ html, body{
 	width:100%;
 	height:100%;
 	display:flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
-	align-items:space-between;
-	color:black;
+	align-items:center;
+	color:$shell;
   background-color: white;
 
   section{
   	background-color: white;
   	width:100%;
   	display: flex;
-  	flex-direction:row;
-  	justify-content:flex-start;
-  	padding:10px 0px 20px 0px;
+  	flex-direction:column;
+  	align-items:center;
+  	color:$shell;
 
-  	.header{
-  		width:30%
-  	}
+	  .section-container{
+	  	width:90%;
+	  	display: flex;
+	  	flex-direction:row;
+	  	justify-content:flex-start;
+	  	padding:10px 0px 20px 0px;
 
-  	.section-content{
-  		display:flex;
-  		flex-direction:column;
-  		width:70%;
-  	}
+	  	.header{
+	  		width:30%
+	  	}
 
-  	h1{
-  		padding:0px 0px 10px 0px;
-  		margin:0px;
-  		font-size: 42px;
-  	}
+	  	.section-content{
+	  		display:flex;
+	  		flex-direction:column;
+	  		width:70%;
+	  	}
 
-  	p{
-  		font-size: 24px;
-  	}
+	  	h1{
+	  		padding:0px 0px 10px 0px;
+	  		margin:0px;
+	  		font-size: 42px;
+	  		text-shadow: 3px 2px black;
+	  	}
 
-  	.info{
-  		width:100%;
-  		padding:0px 20px 0px 10px;
-  	}
+	  	p{
+	  		font-size: 24px;
+	  	}
 
-  	.visuals{
-  		width:100%;
-  		order:-1;
+	  	.info{
+	  		width:100%;
+	  		padding:0px 20px 0px 10px;
+	  	}
 
-  		.placeholder{
-  			width:100%;
-  			height:580px;
-  			background-color: grey;
-  		}
-  	}
-  }
+	  	.visuals{
+	  		width:100%;
+	  		order:-1;
+
+	  		.placeholder{
+	  			width:100%;
+	  			height:580px;
+	  			background-color: grey;
+	  		}
+	  	}
+	  }
+	}
 
 
 
   @media screen and (max-width: 768px){
+
   	section{
-  		flex-direction: column;
 
-  		.header{
-  			width:100%
-  		}
+	  	.section-container{
+	  		flex-direction: column;
 
-  		.section-content{
-  			display:flex;
-  			flex-direction:column;
-  			width:100%;
-  		}
+	  		.header{
+	  			width:100%;
+	  		}
 
-  		.info{
-  			width:100%;
-  			padding:0px 20px 0px 0px;
-  		}
+	  		.section-content{
+	  			display:flex;
+	  			flex-direction:column;
+	  			width:100%;
+	  		}
 
-  		.visuals{
-  			width:100%;
-  			order:-1;
+	  		.info{
+	  			width:100%;
+	  			padding:0px 20px 0px 0px;
+	  		}
 
-  			.placeholder{
-		  		height:340px;
-		  	}
-  		}
+	  		.visuals{
+	  			width:100%;
+	  			order:-1;
 
-  		.header{
-  			width:100%;
-  			order: -2;
-  		}
-  	}
+	  			.placeholder{
+			  		height:340px;
+			  	}
+	  		}
+
+	  		.header{
+	  			width:100%;
+	  			order: -2;
+	  		}
+	  	}
+	  }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1380px){
-  	  	section{
-  	  		flex-direction: row;
+  	section{
+
+  	  	.section-container{
+  	  		flex-direction: column;
 
   	  		.section-content{
 		  			display:flex;
 		  			flex-direction:column;
-		  			width:70%;
+		  			width:90%;
 		  		}
 
   	  		.info{
@@ -631,9 +648,10 @@ html, body{
   	  		}
 
   	  		.header{
-  	  			width:30%;
+  	  			width:100%;
   	  		}
   	  	}
+  	  }
   }
 
 
@@ -649,14 +667,14 @@ footer{
 	position: relative;
 	width:100%;
 	height:60px;
-	background-color: black;
-	color: $aqua;
+	background-color: $black;
+	color: $grape;
 	bottom:0;
 
 	.footer-info{
 		display: flex;
 		flex-direction:row;
-		justify-content:space-between;
+		justify-content:center;
 		align-items:center;
 		width:100%;
 		height:100%;
@@ -713,4 +731,26 @@ i {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+
+#campaign{
+	background-color: $blush;
+	color:white;
+}
+
+#journey{
+	background-color: $grape;
+	color:white;
+}
+
+#updates{
+	background-color: $papaya;
+	color:white;
+}
+
+#foundation{
+	background-color: $mustard;
+	color:white;
+}
+
 
