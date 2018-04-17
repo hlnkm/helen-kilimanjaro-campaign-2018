@@ -110,8 +110,9 @@ html, body {
       background-color: #e24e42; }
   .landing .buttons {
     position: absolute;
-    left: 0px;
-    bottom: 10px;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,6 +120,7 @@ html, body {
     align-items: center;
     font-size: 24px;
     font-weight: 500;
+    margin-top: 10px;
     text-shadow: 2px 1px black;
     text-align: center; }
     .landing .buttons .btn a {
