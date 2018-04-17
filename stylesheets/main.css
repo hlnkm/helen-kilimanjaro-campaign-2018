@@ -34,6 +34,14 @@ html, body {
     background-color: rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 100%; }
+  .landing .landing-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 20px 20px 20px;
+    justify-content: center;
+    align-items: flex-start; }
   .landing .landing-subsubtitle {
     font-size: 32px;
     text-shadow: 4px 3px black;
@@ -42,8 +50,7 @@ html, body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   .landing .landing-title {
     font-weight: 700;
     padding: 0px;
@@ -55,34 +62,33 @@ html, body {
     flex-wrap: wrap; }
     .landing .landing-title .title-large {
       font-weight: 700;
-      font-size: 240px;
+      font-size: 220px;
       text-shadow: 9px 7px black;
       padding: 0px 10px 0px 0px;
       margin-top: -50px; }
     .landing .landing-title .title-animated {
       font-weight: 700;
-      font-size: 140px;
+      font-size: 120px;
       text-shadow: 9px 7px black;
-      min-width: 460px;
-      height: 180px; }
+      min-width: 460px; }
   .landing .landing-subtitle {
     font-weight: 700;
-    font-size: 140px;
+    font-size: 120px;
     text-shadow: 9px 7px black;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
-    height: 100%; }
+    margin-top: -20px; }
     .landing .landing-subtitle .landing-subtitle-main {
       line-height: 90%;
       padding-right: 40px; }
     .landing .landing-subtitle .landing-subtitle-badge {
       border-radius: 50%;
       background-color: #008f95;
-      min-width: 280px;
-      min-height: 280px;
+      min-width: 250px;
+      min-height: 250px;
       font-size: 48px;
       font-weight: 500;
       text-shadow: 3px 2px black;
@@ -94,7 +100,7 @@ html, body {
       align-items: center;
       text-align: center; }
       .landing .landing-subtitle .landing-subtitle-badge span {
-        width: 250px;
+        width: 220px;
         transform: rotate(20deg); }
         .landing .landing-subtitle .landing-subtitle-badge span a {
           color: white;
@@ -127,8 +133,8 @@ html, body {
       flex-direction: column;
       align-items: center; }
       .landing .landing-title .title-large {
-        font-size: 100px;
-        margin-top: -25px;
+        font-size: 80px;
+        margin-top: 0px;
         text-shadow: 6px 5px black; }
       .landing .landing-title .title-animated {
         font-size: 48px;
@@ -142,7 +148,8 @@ html, body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center; }
+      text-align: center;
+      margin-top: 0px; }
       .landing .landing-subtitle .landing-subtitle-main {
         padding-right: 0px; }
       .landing .landing-subtitle .landing-subtitle-badge {
@@ -173,7 +180,8 @@ html, body {
       font-size: 24px;
       font-weight: 500;
       margin-top: 10px;
-      text-shadow: 2px 1px black; }
+      text-shadow: 2px 1px black;
+      width: 100%; }
       .landing .buttons .btn {
         min-width: 100%;
         height: 40px;
@@ -191,13 +199,13 @@ html, body {
         .landing .buttons .btn a {
           color: white;
           text-decoration: none; } }
-  @media screen and (min-width: 768px) and (max-width: 1380px) {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
     .landing .landing-title .title-large {
       font-weight: 700;
-      font-size: 140px;
+      font-size: 120px;
       text-shadow: 9px 7px black;
       padding: 0px 10px 0px 0px;
-      margin-top: -30px; }
+      margin-top: -10px; }
     .landing .landing-title .title-animated {
       font-weight: 700;
       font-size: 80px;
@@ -211,9 +219,8 @@ html, body {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      align-items: baseline;
-      width: 100%;
-      height: 100%; }
+      align-items: center;
+      width: 100%; }
       .landing .landing-subtitle .landing-subtitle-main {
         line-height: 90%;
         padding-right: 20px; }
@@ -234,6 +241,70 @@ html, body {
         text-align: center; }
         .landing .landing-subtitle .landing-subtitle-badge span {
           width: 180px;
+          transform: rotate(20deg); }
+          .landing .landing-subtitle .landing-subtitle-badge span a {
+            color: white;
+            text-decoration: none; }
+      .landing .landing-subtitle .landing-subtitle-badge:hover {
+        background-color: #eb6e80; }
+    .landing .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 32px;
+      font-weight: 500;
+      margin-top: 10px;
+      text-shadow: 4px 2px black; }
+      .landing .buttons .btn {
+        border: 4px solid white;
+        box-shadow: 4px 4px black;
+        padding: 10px;
+        margin-right: 10px; }
+        .landing .buttons .btn a {
+          color: white;
+          text-decoration: none; } }
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .landing .landing-title .title-large {
+      font-weight: 700;
+      font-size: 180px;
+      text-shadow: 9px 7px black;
+      padding: 0px 10px 0px 0px;
+      margin-top: -30px; }
+    .landing .landing-title .title-animated {
+      font-weight: 700;
+      font-size: 120px;
+      text-shadow: 9px 7px black;
+      min-width: 300px;
+      height: 0px; }
+    .landing .landing-subtitle {
+      font-weight: 700;
+      font-size: 120px;
+      text-shadow: 9px 7px black;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%; }
+      .landing .landing-subtitle .landing-subtitle-main {
+        line-height: 90%;
+        padding-right: 20px; }
+      .landing .landing-subtitle .landing-subtitle-badge {
+        border-radius: 50%;
+        background-color: #008f95;
+        min-width: 240px;
+        min-height: 240px;
+        font-size: 32px;
+        font-weight: 500;
+        text-shadow: 3px 2px black;
+        box-shadow: 6px 5px black;
+        border: 4px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .landing .landing-subtitle .landing-subtitle-badge span {
+          width: 200px;
           transform: rotate(20deg); }
           .landing .landing-subtitle .landing-subtitle-badge span a {
             color: white;

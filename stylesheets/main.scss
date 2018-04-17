@@ -14,8 +14,9 @@ $regular:400;
 $thin:300;
 
 // font-sizes:
-$fontsize-xl: 240px;
-$fontsize-lg: 140px;
+$fontsize-xl: 220px;
+$fontsize-sxl: 180px;
+$fontsize-lg: 120px;
 $fontsize-slg: 80px;
 $fontsize-md: 48px;
 $fontsize-sm: 32px;
@@ -71,6 +72,16 @@ html, body{
   	width:100%;
   	height:100%;
   }
+  
+  .landing-container{
+  	height:100%;
+  	display:flex;
+  	flex-direction:column;
+  	width:90%;
+  	padding:10px 20px 20px 20px;
+  	justify-content:center;
+  	align-items:flex-start;
+  }
 
   .landing-subsubtitle{
 		font-size: $fontsize-sm;	
@@ -81,7 +92,7 @@ html, body{
 		justify-content:flex-start;
 		align-items:flex-start;
 		width:100%;
-		height:100%;
+		// height:100%;
 	}
 
 
@@ -108,7 +119,7 @@ html, body{
 			font-size: $fontsize-lg;	
 			text-shadow: 9px 7px black;
 			min-width:460px;
-			height:180px;
+			// height:180px;
 			}
 	}
 
@@ -119,9 +130,9 @@ html, body{
 		display: flex;
 		flex-direction:row;
 		justify-content:flex-start;
-		align-items:flex-start;
+		align-items:center;
 		width:100%;
-		height:100%;
+		margin-top: -20px;
 
 		.landing-subtitle-main{
 			line-height: 90%;
@@ -131,9 +142,9 @@ html, body{
 		.landing-subtitle-badge{
 			border-radius: 50%;
 			background-color: $aqua;
-			min-width:280px;
-			min-height:280px;
-			font-size: 48px;
+			min-width:250px;
+			min-height:250px;
+			font-size: $fontsize-md;
 			font-weight: 500;	
 			text-shadow: 3px 2px black;
 			box-shadow: 6px 5px black;
@@ -146,7 +157,7 @@ html, body{
 			text-align: center;
 			
 				span{
-					width:250px;
+					width:220px;
 					transform: rotate(20deg);
 
 					a {
@@ -200,7 +211,7 @@ html, body{
 
 			.title-large{
 				font-size: $fontsize-lg - 40;
-				margin-top: -25px;
+				margin-top: 0px;
 				text-shadow: 6px 5px black;
 			}
 			.title-animated{
@@ -219,6 +230,7 @@ html, body{
 			justify-content:center;
 			align-items:center;
 			text-align: center;
+			margin-top: 0px;
 
 			.landing-subtitle-main{
 				padding-right:0px;	
@@ -262,6 +274,7 @@ html, body{
 			font-weight:$bold;	
 			margin-top:10px;
 			text-shadow: 2px 1px black;
+			width:100%;
 
 			.btn{
 				min-width:100%;
@@ -286,14 +299,14 @@ html, body{
 		}
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1380px){
+	@media screen and (min-width: 768px) and (max-width: 992px){
 		.landing-title{
 			.title-large{
 				font-weight: $extrabold;
 				font-size: $fontsize-lg;	
 				text-shadow: 9px 7px black;
 				padding:0px 10px 0px 0px;
-		    margin-top: -30px;
+		    margin-top: -10px;
 				// line-height: 50%;
 				}
 			.title-animated{
@@ -312,9 +325,8 @@ html, body{
 			display: flex;
 			flex-direction:row;
 			justify-content:flex-start;
-			align-items:baseline;
+			align-items:center;
 			width:100%;
-			height:100%;
 
 			.landing-subtitle-main{
 				line-height: 90%;
@@ -378,8 +390,99 @@ html, body{
 				}
 			}
 		}
+	}
 
+	@media screen and (min-width: 993px) and (max-width: 1200px){
+		.landing-title{
+			.title-large{
+				font-weight: $extrabold;
+				font-size: $fontsize-sxl;
+				text-shadow: 9px 7px black;
+				padding:0px 10px 0px 0px;
+		    margin-top: -30px;
+				// line-height: 50%;
+				}
+			.title-animated{
+				font-weight: $extrabold;
+				font-size: $fontsize-lg;	
+				text-shadow: 9px 7px black;
+				min-width:300px;
+				height:0px;
+				}
+		}
 
+		.landing-subtitle{
+			font-weight: $extrabold;
+			font-size: $fontsize-lg;	
+			text-shadow: 9px 7px black;
+			display: flex;
+			flex-direction:row;
+			justify-content:flex-start;
+			align-items:center;
+			width:100%;
+
+			.landing-subtitle-main{
+				line-height: 90%;
+				padding-right: 20px;
+				// margin-right: -20px;
+			}
+
+			.landing-subtitle-badge{
+				border-radius: 50%;
+				background-color: $aqua;
+				min-width:240px;
+				min-height:240px;
+				font-size: $fontsize-sm;
+				font-weight: $bold;	
+				text-shadow: 3px 2px black;
+				box-shadow: 6px 5px black;
+				border:4px solid white;
+
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+				text-align: center;
+				
+					span{
+						width:200px;
+						transform: rotate(20deg);
+
+						a {
+						  color: white;
+						  text-decoration: none; 
+						}
+					}
+			}
+
+			.landing-subtitle-badge:hover{
+					background-color: $blush;
+			}
+
+		}
+
+		.buttons{
+			display: flex;
+			flex-direction:row;
+			justify-content:flex-start;
+			font-size: $fontsize-sm;
+			font-weight: $bold;	
+			margin-top:10px;
+			text-shadow: 4px 2px black;
+
+			.btn{
+				// width:250px;
+				border:4px solid white;
+				box-shadow: 4px 4px black;
+				padding:10px;
+				margin-right:10px;
+
+				a {
+				  color: white;
+				  text-decoration: none; 
+				}
+			}
+		}
 	}
 
 } // end of .landing
