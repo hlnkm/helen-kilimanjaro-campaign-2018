@@ -115,8 +115,7 @@ html, body {
     width: 100%;
     align-items: center;
     font-size: 24px;
-    font-weight: 500;
-    text-shadow: 2px 1px black;
+    font-weight: 400;
     text-align: center;
     z-index: 10;
     padding-bottom: 10px; }
@@ -182,14 +181,14 @@ html, body {
     .landing .buttons {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%;
       align-items: center;
-      font-size: 18px;
-      font-weight: 500;
-      margin-top: 30px;
-      text-shadow: 2px 1px black;
-      text-align: center; }
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+      z-index: 10;
+      padding-bottom: 10px; }
       .landing .buttons .btn a {
         color: white;
         text-decoration: none; } }
@@ -243,14 +242,14 @@ html, body {
     .landing .buttons {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%;
       align-items: center;
       font-size: 24px;
-      font-weight: 500;
-      margin-top: 10px;
-      text-shadow: 4px 2px black;
-      text-align: center; }
+      font-weight: 400;
+      text-align: center;
+      z-index: 10;
+      padding-bottom: 10px; }
       .landing .buttons .btn a {
         color: white;
         text-decoration: none; } }
@@ -304,14 +303,14 @@ html, body {
     .landing .buttons {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
       width: 100%;
       align-items: center;
       font-size: 24px;
-      font-weight: 500;
-      margin-top: 10px;
-      text-shadow: 4px 2px black;
-      text-align: center; }
+      font-weight: 400;
+      text-align: center;
+      z-index: 10;
+      padding-bottom: 10px; }
       .landing .buttons .btn a {
         color: white;
         text-decoration: none; } }
@@ -326,7 +325,7 @@ html, body {
   color: #F8EEE7;
   background-color: white; }
   .main section {
-    padding: 40px 0px 40px 0px;
+    padding: 48px 0px 48px 0px;
     background-color: white;
     width: 100%;
     display: flex;
@@ -426,35 +425,21 @@ footer {
     footer .footer-info {
       flex-direction: column;
       font-size: 10px; } }
-.highlight {
+.highlight-foundation {
   background-color: #eb6e80;
+  padding: 2px; }
+
+.highlight-journey {
+  background-color: #e24e42;
+  padding: 2px; }
+
+.highlight-campaign {
+  background-color: #008f95;
   padding: 2px; }
 
 .countdown {
   font-size: 32px;
   font-weight: 500; }
-
-i {
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px; }
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg); }
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg); }
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg); }
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg); }
 
 #campaign {
   background-color: #eb6e80;
@@ -498,5 +483,10 @@ i {
     .bottomMenu div a {
       color: #eb6e80;
       text-decoration: none; }
+
+#result {
+  width: 90%;
+  padding: 10px 40px 10px 0px;
+  height: 40px; }
 
 /*# sourceMappingURL=main.css.map */

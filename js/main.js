@@ -38,7 +38,23 @@ $(document).ready(function(){
 	get current value for fundraiser
 	*/
 	const mjffUrl = "https://fundraise.michaeljfox.org/tf-2018/HelenandKilimanjaro"
-	$( "#result" ).load( `https://cors-anywhere.herokuapp.com/${mjffUrl} .was-raised`);
+	// $( "#result" ).load( `https://cors-anywhere.herokuapp.com/${mjffUrl} .was-raised`);
+
+	$.get(`https://cors-anywhere.herokuapp.com/${mjffUrl}`, function(data) {
+		
+		// let body = $.parseHTML(data)
+		let wasRaised = $(data).find(".was-raised").text()
+		wasRaised = wasRaised.replace(/\D+/g, '');
+
+		var percentage =(wasRaised/19341)*100 ;
+
+		$("#result").html(`<div id='progress-bar' 
+			style="width:100%; height:10px; background-color:white"> 
+				<div style="width:${percentage}%; height:10px; background-color:#008f95"> </div>
+				<div>$${wasRaised} pledged of the total $19,341 goal</div>
+			</div>`)
+		console.log(wasRaised);
+	});
 
 	/*
 	countdown
