@@ -69,7 +69,7 @@ html, body{
 
   .landing-bg{
   	display: flex;
-  	flex-direction:row;
+  	flex-direction:column;
   	justify-content:center;
     align-items: center;
   	background-color: rgba(0,0,0,0.25);
@@ -180,12 +180,6 @@ html, body{
 
 
 	.buttons{
-		position: absolute;
-		// left:0px;
-		// bottom:10px;
-		bottom: 0%;
-    left: 50%;
-    transform: translate(-50%,-10%);
 		display: flex;
 		flex-direction:column;
 		justify-content:center;
@@ -193,18 +187,14 @@ html, body{
 		align-items:center;
 		font-size: $fontsize-xs;
 		font-weight: 500;	
-		margin-top:10px;
+		// margin-top:40px;
 		text-shadow: 2px 1px black;
 		text-align: center;
 		z-index: 10;
+		padding-bottom: 10px;
 
 		.btn{
-			// width:250px;
-			// border:4px solid white;
-			// box-shadow: 4px 4px black;
-			// padding:10px;
-			// margin-right:10px;
-
+			
 			a {
 			  color: white;
 			  text-decoration: none; 
@@ -532,6 +522,7 @@ html, body{
   background-color: white;
 
   section{
+  	padding:40px 0px 40px 0px;
   	background-color: white;
   	width:100%;
   	display: flex;
@@ -573,6 +564,7 @@ html, body{
 	  	}
 
 	  	.visuals{
+	  		padding: 20px 0px 20px 0px;
 	  		width:100%;
 	  		order:-1;
 
