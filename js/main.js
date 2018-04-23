@@ -51,7 +51,8 @@ $(document).ready(function(){
 		$("#result").html(`<div id='progress-bar' 
 			style="width:100%; height:10px; background-color:white"> 
 				<div style="width:${percentage}%; height:10px; background-color:#008f95"> </div>
-				<div>$${wasRaised} pledged of the total $19,341 goal</div>
+				<div style="padding-top: 5px;"> <span style="font-size: 24px;"><b>$${wasRaised}</b></span></div>
+				<div>pledged of the total $19,341 goal</div>
 			</div>`)
 		console.log(wasRaised);
 	});
@@ -78,6 +79,12 @@ $(document).ready(function(){
 
 	});
 
+	//initialize swiper when document ready
+	// var journeySwiper = new Swiper ('.journey-swiper', {
+	//      // Optional parameters
+	//      direction: 'horizontal',
+	//      loop: true
+	//    })
 
 
 })

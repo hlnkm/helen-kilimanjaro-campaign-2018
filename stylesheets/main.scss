@@ -555,6 +555,10 @@ html, body{
 	  			width:100%;
 	  			height:580px;
 	  			background-color: grey;
+
+	  			img{
+	  				width:100%;
+	  			}
 	  		}
 	  	}
 	  }
@@ -590,6 +594,10 @@ html, body{
 
 	  			.placeholder{
 			  		height:340px;
+
+			  		img{
+		  				width:100%;
+		  			}
 			  	}
 	  		}
 
@@ -624,6 +632,10 @@ html, body{
 
   	  			.placeholder{
   			  		height:340px;
+
+  			  		img{
+  			  			width:100%;
+  			  		}
   			  	}
   	  		}
 
@@ -752,9 +764,26 @@ footer{
 #result{
 	width:90%;
 	padding:10px 40px 10px 0px;
-	height:40px;
+	height:80px;
 }
 
 
+#campaign-placeholder{
+	background-image:url("../assets/helen-placeholder.png");
+	background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+  background-color: black;
+}
+
+#journey-placeholder{
+	background-image:url("../assets/Mt._Kilimanjaro_12.2006.JPG");
+	background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+  background-color: black;
+}
 
 

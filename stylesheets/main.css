@@ -362,6 +362,8 @@ html, body {
           width: 100%;
           height: 580px;
           background-color: grey; }
+          .main section .section-container .visuals .placeholder img {
+            width: 100%; }
   @media screen and (max-width: 768px) {
     .main section .section-container {
       flex-direction: column; }
@@ -379,6 +381,8 @@ html, body {
         order: -1; }
         .main section .section-container .visuals .placeholder {
           height: 340px; }
+          .main section .section-container .visuals .placeholder img {
+            width: 100%; }
       .main section .section-container .header {
         width: 100%;
         order: -2; } }
@@ -397,6 +401,8 @@ html, body {
         order: -1; }
         .main section .section-container .visuals .placeholder {
           height: 340px; }
+          .main section .section-container .visuals .placeholder img {
+            width: 100%; }
       .main section .section-container .header {
         width: 100%; } }
 
@@ -487,6 +493,20 @@ footer {
 #result {
   width: 90%;
   padding: 10px 40px 10px 0px;
-  height: 40px; }
+  height: 80px; }
+
+#campaign-placeholder {
+  background-image: url("../assets/helen-placeholder.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black; }
+
+#journey-placeholder {
+  background-image: url("../assets/Mt._Kilimanjaro_12.2006.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black; }
 
 /*# sourceMappingURL=main.css.map */
