@@ -54,7 +54,7 @@ $(document).ready(function(){
 				<div style="padding-top: 5px;"> <span style="font-size: 24px;"><b>$${wasRaised}</b></span></div>
 				<div>pledged of the total $19,341 goal</div>
 			</div>`)
-		console.log(wasRaised);
+		// console.log(wasRaised);
 	});
 
 	/*
@@ -76,7 +76,6 @@ $(document).ready(function(){
 	    } else {
 	        $('.bottomMenu').fadeOut();
 	    }
-
 	});
 
 	//initialize swiper when document ready

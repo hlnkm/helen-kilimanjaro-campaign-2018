@@ -755,14 +755,14 @@ footer{
 }
 
 .bottomMenu {
-    display: none;
+		
     position: fixed;
     bottom: 0;
     right:0;
     z-index: 1;
     color:$blush;
-    font-size: $fontsize-xs;
-    	font-weight: $bold;
+    font-size: $fontsize-xs - 4;
+    font-weight: $extrabold;
 
     width: 0;
     height: 0;
@@ -775,16 +775,22 @@ footer{
     align-items:flex-end;
 
     div{
-    	margin-top: 160px;
-    	margin-right:10px;
+    	margin-top: 154px;
+    	margin-right:0px;
     	transform: rotate(-45deg);
-    	text-shadow: 1px 1px black;
+    	text-shadow: 1px 1px $grape;
     	a {
 					  color:$blush;
 					  text-decoration: none; 
 					}
     }
+    div:hover{
+    	a{
+    		color:$papaya;
+    	}
+    }
 }
+
 
 #result{
 	width:90%;

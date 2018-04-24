@@ -478,14 +478,13 @@ footer {
   color: white; }
 
 .bottomMenu {
-  display: none;
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 1;
   color: #eb6e80;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
   width: 0;
   height: 0;
   border-style: solid;
@@ -496,13 +495,15 @@ footer {
   justify-content: center;
   align-items: flex-end; }
   .bottomMenu div {
-    margin-top: 160px;
-    margin-right: 10px;
+    margin-top: 154px;
+    margin-right: 0px;
     transform: rotate(-45deg);
-    text-shadow: 1px 1px black; }
+    text-shadow: 1px 1px #94618e; }
     .bottomMenu div a {
       color: #eb6e80;
       text-decoration: none; }
+  .bottomMenu div:hover a {
+    color: #e24e42; }
 
 #result {
   width: 90%;
