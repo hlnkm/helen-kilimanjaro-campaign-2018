@@ -514,6 +514,10 @@ html, body{
 	#journey .section-content .info p{
   	text-shadow:1px 1px $blush;	
 	}
+	.section-content .info p a{
+		text-decoration: underline;
+		color: $white;
+	}
 	#updates .section-content .info p{
   	text-shadow:1px 1px $grape;	
 	}
@@ -755,7 +759,6 @@ footer{
 }
 
 .bottomMenu {
-		
     position: fixed;
     bottom: 0;
     right:0;

@@ -331,6 +331,9 @@ html, body {
     text-shadow: 1px 1px #94618e; }
   .main #journey .section-content .info p {
     text-shadow: 1px 1px #eb6e80; }
+  .main .section-content .info p a {
+    text-decoration: underline;
+    color: #FFFFFF; }
   .main #updates .section-content .info p {
     text-shadow: 1px 1px #94618e; }
   .main #foundation .section-content .info p {
