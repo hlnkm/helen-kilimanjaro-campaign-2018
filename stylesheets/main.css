@@ -514,10 +514,6 @@ footer {
   height: 80px; }
 
 #campaign-placeholder {
-  background-image: url("../assets/helen-placeholder.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   background-color: black; }
 
 #journey-placeholder {
