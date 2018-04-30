@@ -192,7 +192,7 @@ html, body {
       .landing .buttons .btn a {
         color: white;
         text-decoration: none; } }
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+  @media screen and (min-width: 770px) and (max-width: 992px) {
     .landing .landing-title .title-large {
       font-weight: 700;
       font-size: 120px;
@@ -478,6 +478,10 @@ footer {
 
 #foundation {
   background-color: #e9b000;
+  color: white; }
+
+#friends {
+  background-color: #008f95;
   color: white; }
 
 .bottomMenu {

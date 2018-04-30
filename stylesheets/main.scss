@@ -298,7 +298,7 @@ html, body{
 		}
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 992px){
+	@media screen and (min-width: 770px) and (max-width: 992px){
 		.landing-title{
 			.title-large{
 				font-weight: $extrabold;
@@ -755,6 +755,11 @@ footer{
 
 #foundation{
 	background-color: $mustard;
+	color:white;
+}
+
+#friends{
+	background-color: $aqua;
 	color:white;
 }
 
