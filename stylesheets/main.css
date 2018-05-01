@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font: 100% "Barlow Condensed", sans-serif;
   width: 100%;
   min-height: 100%;
@@ -520,11 +521,26 @@ footer {
 #campaign-placeholder {
   background-color: black; }
 
-#journey-placeholder {
-  background-image: url("../assets/Mt._Kilimanjaro_12.2006.JPG");
-  background-repeat: no-repeat;
+.swiper-container {
+  height: 100%; }
+
+.swiper-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
   background-position: center;
   background-size: cover;
-  background-color: black; }
+  color: white; }
+
+.swiper-pagination-bullet-active {
+  background: #ffffff; }
+
+.swiper-slide small {
+  width: 100%;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */
