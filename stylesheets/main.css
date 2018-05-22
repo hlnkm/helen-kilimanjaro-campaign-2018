@@ -6,7 +6,7 @@ header, footer ul, section .section-content .section-main .section-row {
   display: flex;
   flex-direction: row; }
 
-footer, section, section .section-content, section .section-content .section-main, #Updates .col-6:nth-child(2), #Banner, #Banner #Headline, #Banner #Headline #Learn-More-Button {
+footer, section, section .section-content, section .section-content .section-main, #Updates .col-6:nth-child(2), #Acknowledgements .donate-button, #Banner, #Banner #Headline, #Banner #Headline #Learn-More-Button {
   display: flex;
   flex-direction: column; }
 
@@ -101,6 +101,9 @@ footer {
       footer ul li a {
         text-decoration: none;
         color: black; }
+  footer a {
+    text-decoration: none;
+    color: black; }
 
 section {
   align-items: center;
@@ -191,6 +194,22 @@ section {
   height: 600px;
   min-width: 600px;
   position: absolute; }
+#Acknowledgements .donate-cta {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+#Acknowledgements .donate-button {
+  padding: 10px;
+  border: 2px solid #eb6e80;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.5); }
+#Acknowledgements .donate-button:hover {
+  background-color: #FFFFFF; }
 
 @media (max-width: 680px) {
   section .section-content .section-main .section-row {
@@ -326,5 +345,8 @@ section {
   #Acknowledgements ul li {
     list-style: none;
     margin: 0; }
+#Acknowledgements a {
+  text-decoration: none;
+  color: #eb6e80; }
 
 /*# sourceMappingURL=main.css.map */
