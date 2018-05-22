@@ -69,8 +69,15 @@ html,body{
 }
 
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+
+
 }
+
+.overflow-wrapper{
+    overflow-x: hidden !important;
+}
+
 
 #App{
   display: flex;
