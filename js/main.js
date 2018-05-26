@@ -55,7 +55,20 @@ $(window).on('load', function() {
           <div style="width:${percentage}%; height:20px; background-color:#ED912B ; border-radius:8px"> </div>
           <div>pledged of the total $19,341 goal</div>
         </div>`)
-      // console.log(wasRaised);
+
+
+      // get supporters list:
+      let supportedBy = $(data).find(".topFundName")
+      $(supportedBy).find(".topFundimage").remove();;
+      // console.log(supportedBy);
+      let supportersList = "Danny, Jen, Ellina, Jurry, and Millie";
+      $(supportedBy).each(function(idx, name){
+        supportersList +=  `, ${$(name).text()}`
+      })
+      supportersList += ", and all of those helping to raise awareness and support for this campaign and others!"
+      // console.log(supportersList)
+      $("#supportersList").text(supportersList);
+
     });
 
     /*
