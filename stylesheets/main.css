@@ -219,40 +219,41 @@ section {
 
   #Updates #Bg-Yellow-Circle {
     overflow-x: hidden;
-    min-width: 380px;
-    min-height: 380px; }
+    min-width: 300px;
+    min-height: 300px; }
 
-  #About #Bg-Purple-Square {
-    overflow-x: hidden;
-    min-width: 380px;
-    min-height: 380px; }
-  #About #embed-container {
-    height: unset; }
+  #About {
+    overflow-x: hidden; }
+    #About #Bg-Purple-Square {
+      min-width: 300px;
+      min-height: 300px; }
+    #About #embed-container {
+      height: unset; }
 
   #MJFF #Bg-Orange-Strips {
     overflow-x: hidden;
-    min-width: 380px;
-    min-height: 380px; }
+    min-width: 300px;
+    min-height: 300px; }
   #MJFF iframe {
     height: unset; }
 
   #Track #Bg-Blue-Squiggle {
     overflow-x: hidden;
-    min-width: 380px;
-    min-height: 380px; }
+    min-width: 300px;
+    min-height: 300px; }
   #Track #Map-Container {
     height: 300px; }
 
   #Journey #Bg-Pink-Triangles {
     overflow-x: hidden;
-    min-width: 380px;
-    min-height: 380px; }
+    min-width: 300px;
+    min-height: 300px; }
 
   #Acknowledgements #Bg-Blue-Bubbles {
     overflow-x: hidden;
-    min-width: 380px;
-    min-height: 380px;
-    width: 380px; } }
+    min-width: 300px;
+    min-height: 300px;
+    width: 300px; } }
 #Banner {
   margin-top: 60px;
   margin-bottom: 120px;
@@ -272,7 +273,8 @@ section {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
   #Banner #Headline {
     margin-top: -60px;
     justify-content: center;
@@ -315,7 +317,7 @@ section {
       margin-left: -30px;
       width: 50%; } }
 .loader {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -323,6 +325,7 @@ section {
   z-index: 200000;
   background: white;
   opacity: 1;
+  overflow: hidden;
   /* Safari */
   transition: opacity 0.4s; }
   .loader img {

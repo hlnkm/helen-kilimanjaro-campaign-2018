@@ -1,6 +1,6 @@
 $bg-lg:900px;
 $bg-md: 600px;
-$bg-sm:380px;
+$bg-sm:300px;
 
 section {
 
@@ -212,8 +212,9 @@ section {
   }
 
   #About{
+    overflow-x:hidden;
   	#Bg-Purple-Square{
-  		overflow-x:hidden;
+  		
   		min-width: $bg-sm;
 			min-height: $bg-sm;
   	}

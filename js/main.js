@@ -80,7 +80,6 @@ $(window).on('load', function() {
     var diffDays = Math.round(Math.abs((endDate - today.getTime())/(oneDay)));
     $daysLeft.text(diffDays)
 
-
   Banner.init();
 
 });
