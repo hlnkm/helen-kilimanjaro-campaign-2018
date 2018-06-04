@@ -35,6 +35,10 @@ $(window).on('load', function() {
     };
   })();
 
+  function roundTo2(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
   /*
     get current value for fundraiser
     */
@@ -48,6 +52,7 @@ $(window).on('load', function() {
       wasRaised = wasRaised.replace(/\D+/g, '');
       // for the decimal point
       wasRaised = wasRaised *0.01;
+      wasRaised = roundTo2(wasRaised);
 
       var percentage =(wasRaised/19341)*100 ;
 
