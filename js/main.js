@@ -46,6 +46,8 @@ $(window).on('load', function() {
       // let body = $.parseHTML(data)
       let wasRaised = $(data).find(".was-raised").text()
       wasRaised = wasRaised.replace(/\D+/g, '');
+      // for the decimal point
+      wasRaised = wasRaised *0.01;
 
       var percentage =(wasRaised/19341)*100 ;
 
