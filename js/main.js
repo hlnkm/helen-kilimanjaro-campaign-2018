@@ -82,7 +82,7 @@ $(window).on('load', function() {
     countdown
     */
     var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-    var endDate = Date.parse('01 Aug 2018 00:00:00 EST');
+    var endDate = Date.parse('25 Jul 2018 00:00:00 EST');
     var today = new Date()
     var diffDays = Math.round(Math.abs((endDate - today.getTime())/(oneDay)));
     $daysLeft.text(diffDays)
