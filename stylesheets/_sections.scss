@@ -32,6 +32,9 @@ section {
       text-align: center;
     }
 
+    .goalReached h4{
+      text-align: left;
+    }
 
     .section-quote {
       width: 80%;
@@ -52,7 +55,6 @@ section {
         width: 50%;
         padding: 10px 5px 10px 5px;
       }
-
 
     }
   }
@@ -87,11 +89,15 @@ section {
   .col-6:nth-child(2) {
     @extend %flex-column;
     justify-content: center;
+
+
   }
 
   #campaign-status{
   	height:80px;
   }
+
+
 
 }
 

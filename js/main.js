@@ -49,19 +49,32 @@ $(window).on('load', function() {
       
       // let body = $.parseHTML(data)
       let wasRaised = $(data).find(".was-raised").text()
-      wasRaised = wasRaised.replace(/\D+/g, '');
+      wasRaised = wasRaised.replace(/[,$]/g, '');
       // for the decimal point
-      wasRaised = wasRaised *0.01;
+      wasRaised = Number.parseFloat(wasRaised);
       wasRaised = roundTo2(wasRaised);
+      console.log(wasRaised)
 
-      var percentage =(wasRaised/19341)*100 ;
+      var percentage = Math.floor(wasRaised/19341)*100 ;
 
-      $("#campaign-status").html(`
-        <div style="padding-top: 5px;"> <span style="font-size: 24px;"><b>$${wasRaised}</b></span></div>
-        <div id='progress-bar' style="width:100%; height:20px; background-color:#EB6E80; border-radius:8px"> 
-          <div style="width:${percentage}%; height:20px; background-color:#ED912B ; border-radius:8px"> </div>
-          <div>pledged of the total $19,341 goal</div>
-        </div>`)
+      $("#fundingPercentage").text(percentage);
+
+      if(percentage >= 100){
+        $("#campaign-status").html(`
+          <div style="padding-top: 5px;"> <span style="font-size: 24px;"><b>$${wasRaised}</b></span></div>
+          <div id='progress-bar' style="width:100%; height:20px; background-color:#EB6E80; border-radius:8px"> 
+            <div style="width:${100}%; height:20px; background-color:#ED912B ; border-radius:8px"> </div>
+            <div>pledged of the total $19,341 goal</div>
+          </div>`)  
+      } else{
+        $("#campaign-status").html(`
+          <div style="padding-top: 5px;"> <span style="font-size: 24px;"><b>$${wasRaised}</b></span></div>
+          <div id='progress-bar' style="width:100%; height:20px; background-color:#EB6E80; border-radius:8px"> 
+            <div style="width:${percentage}%; height:20px; background-color:#ED912B ; border-radius:8px"> </div>
+            <div>pledged of the total $19,341 goal</div>
+          </div>`)
+      }
+      
 
 
       // get supporters list:
