@@ -55,7 +55,7 @@ $(window).on('load', function() {
       wasRaised = roundTo2(wasRaised);
       console.log(wasRaised)
 
-      var percentage = Math.floor(wasRaised/19341)*100 ;
+      var percentage = ((wasRaised/19341.00)*100.00).toFixed(2) ;
 
       $("#fundingPercentage").text(percentage);
 
