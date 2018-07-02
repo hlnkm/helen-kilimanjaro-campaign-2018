@@ -45,7 +45,8 @@ $(window).on('load', function() {
     const mjffUrl = "https://fundraise.michaeljfox.org/tf-2018/HelenandKilimanjaro"
     // $( "#result" ).load( `https://cors-anywhere.herokuapp.com/${mjffUrl} .was-raised`);
 
-    $.get(`https://cors-anywhere.herokuapp.com/${mjffUrl}`, function(data) {
+    // https://cors-anywhere.herokuapp.com/
+    $.get(`${mjffUrl}`, function(data) {
       
       // let body = $.parseHTML(data)
       let wasRaised = $(data).find(".was-raised").text()
