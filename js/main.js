@@ -46,7 +46,7 @@ $(window).on('load', function() {
     // $( "#result" ).load( `https://cors-anywhere.herokuapp.com/${mjffUrl} .was-raised`);
 
     // https://cors-anywhere.herokuapp.com/
-    $.get(`https://cors-anywhere.herokuapp.com/${mjffUrl}`, function(data) {
+    $.get(`../data/mjff-page.html`, function(data) {
       
       // let body = $.parseHTML(data)
       let wasRaised = $(data).find(".was-raised").text()
