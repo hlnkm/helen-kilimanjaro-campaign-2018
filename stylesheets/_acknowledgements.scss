@@ -15,4 +15,12 @@
 		text-decoration: none;
 		color:$blush;
 	}
+
+	#acknowledgement-logos{
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		width:100%;
+	}
 }

@@ -124,6 +124,8 @@ section {
       font-weight: 400;
       margin-bottom: 20px;
       text-align: center; }
+    section .section-content .goalReached h4 {
+      text-align: left; }
     section .section-content .section-quote {
       width: 80%; }
     section .section-content .section-main {
@@ -351,5 +353,11 @@ section {
 #Acknowledgements a {
   text-decoration: none;
   color: #eb6e80; }
+#Acknowledgements #acknowledgement-logos {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
