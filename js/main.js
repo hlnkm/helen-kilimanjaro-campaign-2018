@@ -99,7 +99,8 @@ $(window).on('load', function() {
     var endDate = Date.parse('25 Jul 2018 00:00:00 EST');
     var today = new Date()
     var diffDays = Math.round(Math.abs((endDate - today.getTime())/(oneDay)));
-    $daysLeft.text(diffDays)
+    // $daysLeft.text(diffDays)
+    $daysLeft.text("0")
 
   Banner.init();
 
